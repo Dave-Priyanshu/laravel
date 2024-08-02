@@ -1,0 +1,226 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Slightly lighter background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF; /* Change to a vibrant blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Increase font size */
+    font-weight: 700; /* Make the font bold */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Increase spacing between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600; /* Slightly lighter than header */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #FFC107; /* Change color on hover */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px; /* Reduce max-width for a more compact look */
+    padding: 0 20px; /* Add padding inside container */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #343a40; /* Darker gray for sidebar */
+    color: white;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    height: auto; /* Let height adjust based on content */
+    max-height: 200px; /* Optional: Set a maximum height */
+    overflow-y: auto; /* Enable scrolling if content exceeds max-height */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Increase vertical spacing */
+}
+
+.sidebar ul li a {
+    color: #adb5bd; /* Lighter gray for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff; /* Change color on hover */
+    background-color: #495057; /* Darken background on hover */
+    padding: 5px; /* Add padding on hover for a button-like effect */
+    border-radius: 4px; /* Round corners on hover */
+}
+
+/* Content Styles */
+.content {
+    background-color: white;
+    padding: 20px;
+    flex: 1; /* Allow content area to grow */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Table Styles */
+.table {
+    border-collapse: separate; /* Ensure table borders are separate */
+    border-spacing: 0; /* Remove spacing between cells */
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6; /* Border color for cells */
+}
+
+.table thead th {
+    background-color: #007BFF; /* Header background color */
+    color: white;
+    font-weight: 700; /* Bold header text */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Light gray background for odd rows */
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef; /* Light gray background on row hover */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0; /* Margin around the form */
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #007BFF; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Darker gray for footer */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 10px; /* Less padding on smaller screens */
+    }
+    
+    .sidebar {
+        width: 100%; /* Make sidebar take full width on small screens */
+        max-height: none; /* Remove max-height constraint */
+    }
+    
+    .content {
+        margin-top: 20px; /* Add space above content */
+    }
+}
+
+/* Accessibility Improvements */
+a:focus {
+    outline: 2px solid #007BFF; /* Add a focus outline for accessibility */
+    outline-offset: 4px; /* Space between outline and element */
+}
+
+/* General Enhancements */
+h2 {
+    margin-top: 0; /* Remove top margin for h2 tags */
+}
+
+img {
+    max-width: 100%; /* Ensure images don't overflow their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced box-shadow */
+}
+    

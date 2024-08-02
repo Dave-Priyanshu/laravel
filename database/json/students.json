@@ -1,0 +1,141 @@
+[
+    {
+        "name"  : "Priyanshu",
+        "email" : "pd123@gmail.com",
+        "city"  : "Mumbai"
+        
+    },
+
+    {
+        "name"  : "Yash",
+        "email" : "yash123@gmail.com",
+        "city"  : "Delhi"
+    },
+
+    {
+        "name"  : "Meet",
+        "email" : "meet123@gmail.com",
+        "city"  : "Bangalore"
+    },
+
+    {
+        "name": "Tony Stark",
+        "email": "ironman@avengers.net",
+        "city": "Starkville"
+    },
+
+    {
+        "name": "Steve Rogers",
+        "email": "cap@shield.com",
+        "city": "Brooklynsworth"
+    },
+
+    {
+        "name": "Bruce Banner",
+        "email": "hulk@smashmail.com",
+        "city": "Bannerburg"
+    },
+
+    {
+        "name": "Natasha Romanoff",
+        "email": "blackwidow@spy.net",
+        "city": "SpyCity"
+    },
+
+    {
+        "name": "Clint Barton",
+        "email": "hawkeye@archery.com",
+        "city": "Arrowtown"
+    },
+
+    {
+        "name": "Thor Odinson",
+        "email": "thor@asgard.org",
+        "city": "Thundertown"
+    },
+
+    {
+        "name": "Peter Parker",
+        "email": "spidey@webmail.net",
+        "city": "Websville"
+    },
+
+    {
+        "name": "Wanda Maximoff",
+        "email": "scarletwitch@magicmail.com",
+        "city": "Hexborough"
+    },
+
+    {
+        "name": "Vision",
+        "email": "vision@mindstone.net",
+        "city": "Visionville"
+    },
+
+    {
+        "name": "Stephen Strange",
+        "email": "drstrange@sanctum.com",
+        "city": "Mysticville"
+    },
+
+    {
+        "name": "T'Challa",
+        "email": "blackpanther@wakanda.com",
+        "city": "PantherCity"
+    },
+
+    {
+        "name": "Scott Lang",
+        "email": "antman@pymtech.com",
+        "city": "ShrinkTown"
+    },
+
+    {
+        "name": "Carol Danvers",    
+        "email": "captainmarvel@spaceforce.net",
+        "city": "Spaceport"
+    },
+
+    {
+        "name": "Gamora",
+        "email": "gamora@guardians.com",
+        "city": "Nebulatown"
+    },
+
+    {
+        "name": "Rocket Raccoon",
+        "email": "rocket@trashpanda.net",
+        "city": "RaccoonCity"
+    },
+
+    {
+        "name": "Groot",
+        "email": "groot@iamgroot.com",
+        "city": "Grootville"
+    },
+
+    {
+        "name": "Drax the Destroyer",
+        "email": "drax@destroy.com",
+        "city": "Destroyerville"
+    },
+
+    {
+        "name": "Peter Quill",
+        "email": "starlord@space.com",
+        "city": "Starville"
+    },
+
+    {
+        "name": "Mantis",
+        "email": "mantis@antenna.net",
+        "city": "AntennaCity"
+    },
+
+    {
+        "name": "Nick Fury",
+        "email": "fury@shield.net",
+        "city": "Furytown"
+    }
+
+]
