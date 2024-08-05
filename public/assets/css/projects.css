@@ -1,0 +1,91 @@
+/* styles/projects.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.projects-column {
+    flex: 1;
+    min-width: 45%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.project-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h2 {
+    margin-top: 0;
+}
+
+.project-slider {
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.spacer {
+    flex-basis: 100%;
+    height: 40px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .projects-column {
+        min-width: 100%;
+    }
+}

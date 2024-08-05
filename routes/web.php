@@ -15,8 +15,14 @@ function getUsers(){
 
 
 //!Route for Query Builder
-Route::get('/allusers',[UserController::class,'showUsers']);
+Route::get('/allusers',[UserController::class,'showUsers'])->name('home');
 Route::get('/allusers/{id}',[UserController::class,'singleUser'])->name('view.singleUser');
+
+Route::get('/addUser',[UserController::class,'addUser']);
+
+Route::get('/updateUser',[UserController::class,'updateUser']);
+
+Route::get('/deleteUser/{id}',[UserController::class,'deleteUser'])->name('delete.user');
 
 Route::get('/', function () {
     return view('welcome');  
@@ -53,6 +59,11 @@ Route::get('/about', function () {
 
 Route::get('/post', function () {
     return view('post');  
+});
+
+// !Project page Route
+Route::get('/projects',function(){
+    return view('projects');
 });
 
 // !Controller Routes

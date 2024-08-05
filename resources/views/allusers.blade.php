@@ -23,6 +23,7 @@
                         <th>Age</th>
                         <th>City</th>
                         <th>More Details</th>
+                        <th>Delete</th>
                     </tr>
                     @foreach ($data as $id => $user)
                         <tr>
@@ -32,6 +33,7 @@
                             <td>{{ $user->age}}</td>
                             <td>{{ $user->city}}</td>
                             <td><a href="{{ route('view.singleUser',$user->id)}}" id="viewButton" class="btn btn-primary btn-sm">View</a></td>
+                            <td><a href="{{ route('delete.user',$user->id)}}" id="viewButton" class="btn btn-danger btn-sm">Delete</a></td>
                         </tr>
                     @endforeach
                 </table>

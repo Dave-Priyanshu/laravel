@@ -20,10 +20,7 @@ class StudentFactory extends Factory
             'name'     => fake()->name(),
             'age'      => fake()->numberBetween(15, 20),
             'email'    => fake()->email(),
-            'address'  => fake()->address(),
             'city'     => fake()->city(),   
-            'phone'    => fake()->phoneNumber(),
-            'password' => fake()->password()
         ];
     }
 }

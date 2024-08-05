@@ -33,4 +33,48 @@ class UserController extends Controller
         $user = DB::table('students')->where('id', $id)->get();
         return view('singleRecordUser',['data' => $user]);
     }
+
+    public function addUser(){
+        $user = DB::table('students')
+                        ->insertGetId([
+                            'name'  => 'Tony Kumar',
+                            'age'   => 56,
+                            'email' => 'TonyTony@gmail.com',
+                            'city' => 'Tony City',
+                        ]);
+                    return $user;
+        // if($user){
+        //     echo "<h1> Data Added.</h1>";
+        // }
+        // else{
+            
+        //     echo "<h1>Error While Adding the Data.</h1>";
+        // }
+    }
+
+    public function updateUser(){
+        $updateUser = DB::table('students')
+                        ->where('id',3)
+                        ->update([
+                            'city' => 'mumbai',
+                            'age' => 55
+                        ]);
+        if($updateUser){
+            echo "<h1> User Updated.</h1>";
+        }
+        else{
+            
+            echo "<h1>Error While Updateing the User.</h1>";
+        }
+    }
+
+    public function deleteUser(string $id){
+        $deleteUser = DB::table('students')
+                            ->where('id', $id)
+                            ->delete();
+        if($deleteUser){
+            return redirect()->route('home');
+        }
+    }
+    
 }

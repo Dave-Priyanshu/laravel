@@ -25,7 +25,8 @@ class StudentSeeder extends Seeder
             student::create([ 
                 'name'  => $student->name, 
                 'email' => $student->email,
-                'city'  => $student->city
+                'city'  => $student->city,
+                'age'   => $student->age
             ]);
         });
 
